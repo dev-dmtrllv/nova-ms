@@ -1,0 +1,28 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Debug",
+			"request": "launch",
+			"mainClass": "net.server.Server",
+			"projectName": "",
+			"vmArgs": "-jar -Xms2G -Xmx2G target/NovaMS.jar"
+		},
+		{
+			"type": "java",
+			"name": "Build & Debug",
+			"request": "launch",
+			"mainClass": "net.server.Server",
+			"projectName": "",
+			"vmArgs": "-jar -Xms2G -Xmx2G target/NovaMS.jar",
+			"preLaunchTask": "build"
+		},
+		{
+			"type": "PowerShell",
+			"name": "Launch Client",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"script": "${workspaceFolder}/launch-client.ps"
+		}
+	]
+}
