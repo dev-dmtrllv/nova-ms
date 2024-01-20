@@ -69,7 +69,7 @@ public class AssignAPProcessor {
                 // This method excels for assigning APs in such a way to cover all equipments AP requirements.
                 byte opt = inPacket.readByte();     // useful for pirate autoassigning
 
-                int str = 0, dex = 0, luk = 0, int_ = 0;
+                int str = 0, dex = 0, luk = 0; //, int_ = 0;
                 List<Short> eqpStrList = new ArrayList<>();
                 List<Short> eqpDexList = new ArrayList<>();
                 List<Short> eqpLukList = new ArrayList<>();
@@ -94,7 +94,7 @@ public class AssignAPProcessor {
                     luk += nEquip.getLuk();
 
                     //if(nEquip.getInt() > 0) eqpIntList.add(nEquip.getInt()); //not needed...
-                    int_ += nEquip.getInt();
+                   // int_ += nEquip.getInt();
                 }
 
                 statUpdate[0] = chr.getStr();
@@ -138,7 +138,7 @@ public class AssignAPProcessor {
                         }
 
                         prStat = tempAp;
-                        int_ = prStat;
+                        //int_ = prStat;
                         luk = scStat;
                         str = 0;
                         dex = 0;
@@ -172,7 +172,7 @@ public class AssignAPProcessor {
                         prStat = tempAp;
                         dex = prStat;
                         str = scStat;
-                        int_ = 0;
+                        //int_ = 0;
                         luk = 0;
 
                         if (YamlConfig.config.server.USE_AUTOASSIGN_SECONDARY_CAP && str + chr.getStr() > CAP) {
@@ -204,7 +204,7 @@ public class AssignAPProcessor {
                         prStat = tempAp;
                         dex = prStat;
                         str = scStat;
-                        int_ = 0;
+                        //int_ = 0;
                         luk = 0;
 
                         if (YamlConfig.config.server.USE_AUTOASSIGN_SECONDARY_CAP && str + chr.getStr() > CAP) {
@@ -267,7 +267,7 @@ public class AssignAPProcessor {
                         luk = prStat;
                         dex = scStat;
                         str = trStat;
-                        int_ = 0;
+                        //int_ = 0;
 
                         if (YamlConfig.config.server.USE_AUTOASSIGN_SECONDARY_CAP && dex + chr.getDex() > CAP) {
                             temp = dex + chr.getDex() - CAP;
@@ -347,7 +347,7 @@ public class AssignAPProcessor {
                         prStat = tempAp;
                         str = prStat;
                         dex = scStat;
-                        int_ = 0;
+                       // int_ = 0;
                         luk = 0;
 
                         if (YamlConfig.config.server.USE_AUTOASSIGN_SECONDARY_CAP && dex + chr.getDex() > CAP) {
@@ -458,6 +458,7 @@ public class AssignAPProcessor {
                 statUpdate[1] = newVal;
             }
             break;
+		default: break;
         }
 
         if (newVal > YamlConfig.config.server.MAX_AP) {

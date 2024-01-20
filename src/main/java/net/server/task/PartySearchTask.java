@@ -4,7 +4,7 @@ import net.server.world.World;
 /**
  * @author Ronan
  */
-public class PartySearchTask extends BaseTask implements Runnable {
+public class PartySearchTask extends BaseTask {
 
     @Override
     public void run() {

@@ -5,8 +5,8 @@ import config.YamlConfig;
 import constants.id.ItemId;
 import constants.id.MapId;
 import constants.inventory.ItemConstants;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+// import org.slf4j.Logger;
+// import org.slf4j.LoggerFactory;
 import server.ItemInformationProvider;
 import tools.PacketCreator;
 
@@ -16,7 +16,7 @@ import java.util.Calendar;
  * @author Ronan - timing pattern
  */
 public class Fishing {
-    private static final Logger log = LoggerFactory.getLogger(Fishing.class);
+    // private static final Logger log = LoggerFactory.getLogger(Fishing.class);
 
     private static double getFishingLikelihood(int x) {
         return 50.0 + 7.0 * (7.0 * Math.sin(x)) * (Math.cos(Math.pow(x, 0.777)));
@@ -121,62 +121,62 @@ public class Fishing {
         }
     }
 
-    private static void debugFishingLikelihood() {
-        long[] a = new long[365], b = new long[365];
-        long hits = 0, hits10 = 0, total = 0;
+    // private static void debugFishingLikelihood() {
+    //     long[] a = new long[365], b = new long[365];
+    //     long hits = 0, hits10 = 0, total = 0;
 
-        for (int i = 0; i < 365; i++) {
-            double yearLikelihood = getFishingLikelihood(i);
+    //     for (int i = 0; i < 365; i++) {
+    //         double yearLikelihood = getFishingLikelihood(i);
 
-            int dayHits = 0, dayHits10 = 0;
-            for (int k = 0; k < 24; k++) {
-                for (int l = 0; l < 60; l++) {
-                    for (int m = 0; m < 60; m++) {
-                        double timeLikelihood = getFishingLikelihood(k + l + m);
+    //         int dayHits = 0, dayHits10 = 0;
+    //         for (int k = 0; k < 24; k++) {
+    //             for (int l = 0; l < 60; l++) {
+    //                 for (int m = 0; m < 60; m++) {
+    //                     double timeLikelihood = getFishingLikelihood(k + l + m);
 
-                        if ((0.23 * yearLikelihood) + (0.77 * timeLikelihood) > 57.777) {
-                            hits++;
-                            dayHits++;
-                        }
+    //                     if ((0.23 * yearLikelihood) + (0.77 * timeLikelihood) > 57.777) {
+    //                         hits++;
+    //                         dayHits++;
+    //                     }
 
-                        if ((0.23 * yearLikelihood) + (0.77 * timeLikelihood) + 10.0 > 57.777) {
-                            hits10++;
-                            dayHits10++;
-                        }
+    //                     if ((0.23 * yearLikelihood) + (0.77 * timeLikelihood) + 10.0 > 57.777) {
+    //                         hits10++;
+    //                         dayHits10++;
+    //                     }
 
-                        total++;
-                    }
-                }
-            }
+    //                     total++;
+    //                 }
+    //             }
+    //         }
 
-            a[i] = dayHits;
-            b[i] = dayHits10;
-        }
+    //         a[i] = dayHits;
+    //         b[i] = dayHits10;
+    //     }
 
-        long maxhit = 0, minhit = Long.MAX_VALUE;
-        for (int i = 0; i < 365; i++) {
-            if (maxhit < a[i]) {
-                maxhit = a[i];
-            }
+    //     long maxhit = 0, minhit = Long.MAX_VALUE;
+    //     for (int i = 0; i < 365; i++) {
+    //         if (maxhit < a[i]) {
+    //             maxhit = a[i];
+    //         }
 
-            if (minhit > a[i]) {
-                minhit = a[i];
-            }
-        }
+    //         if (minhit > a[i]) {
+    //             minhit = a[i];
+    //         }
+    //     }
 
-        long maxhit10 = 0, minhit10 = Long.MAX_VALUE;
-        for (int i = 0; i < 365; i++) {
-            if (maxhit10 < b[i]) {
-                maxhit10 = b[i];
-            }
+    //     long maxhit10 = 0, minhit10 = Long.MAX_VALUE;
+    //     for (int i = 0; i < 365; i++) {
+    //         if (maxhit10 < b[i]) {
+    //             maxhit10 = b[i];
+    //         }
 
-            if (minhit10 > b[i]) {
-                minhit10 = b[i];
-            }
-        }
+    //         if (minhit10 > b[i]) {
+    //             minhit10 = b[i];
+    //         }
+    //     }
 
-        log.debug("Diary   min {} max {}", minhit, maxhit);
-        log.debug("Diary10 min {} max {}", minhit10, maxhit10);
-        log.debug("Hits: {}, Hits10: {}, Total: {} -- %1000 {}, +10 %1000: {}", hits, hits10, total, (hits * 1000 / total), (hits10 * 1000 / total));
-    }
+    //     log.debug("Diary   min {} max {}", minhit, maxhit);
+    //     log.debug("Diary10 min {} max {}", minhit10, maxhit10);
+    //     log.debug("Hits: {}, Hits10: {}, Total: {} -- %1000 {}, +10 %1000: {}", hits, hits10, total, (hits * 1000 / total), (hits10 * 1000 / total));
+    // }
 } 

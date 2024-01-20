@@ -23,7 +23,7 @@ public enum ChannelServices implements ServiceType {
     }
 
     @Override
-    public Service createService() {
+    public Service<? extends BaseService> createService() {
         return new Service(s);
     }
 

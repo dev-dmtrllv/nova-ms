@@ -32,13 +32,13 @@ public class PacketDecoder extends ReplayingDecoder<Void> {
         out.add(new ByteBufInPacket(Unpooled.wrappedBuffer(packet)));
     }
 
-    /**
-     * @param header Packet header - the first 4 bytes of the packet
-     * @return Packet size in bytes
-     */
-    private static int decodePacketLength(byte[] header) {
-        return (((header[1] ^ header[3]) & 0xFF) << 8) | ((header[0] ^ header[2]) & 0xFF);
-    }
+    // /**
+    //  * @param header Packet header - the first 4 bytes of the packet
+    //  * @return Packet size in bytes
+    //  */
+    // private static int decodePacketLength(byte[] header) {
+    //     return (((header[1] ^ header[3]) & 0xFF) << 8) | ((header[0] ^ header[2]) & 0xFF);
+    // }
 
     private static int decodePacketLength(int header) {
         int length = ((header >>> 16) ^ (header & 0xFFFF));

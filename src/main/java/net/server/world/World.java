@@ -771,7 +771,7 @@ public class World {
 
     public void putMarriageQueued(int marriageId, boolean cathedral, boolean premium, int groomId, int brideId) {
         queuedMarriages.put(marriageId, new Pair<>(new Pair<>(cathedral, premium), new Pair<>(groomId, brideId)));
-        marriageGuests.put(marriageId, new HashSet());
+        marriageGuests.put(marriageId, new HashSet<>());
     }
 
     public Pair<Boolean, Set<Integer>> removeMarriageQueued(int marriageId) {
@@ -1151,7 +1151,7 @@ public class World {
     }
 
     public void messengerChat(Messenger messenger, String chattext, String namefrom) {
-        String from = "";
+        // String from = "";
         String to1 = "";
         String to2 = "";
         for (MessengerCharacter messengerchar : messenger.getMembers()) {
@@ -1166,7 +1166,7 @@ public class World {
                     }
                 }
             } else {
-                from = messengerchar.getName();
+                // from = messengerchar.getName();
             }
         }
     }
@@ -2094,10 +2094,10 @@ public class World {
     }
 
     private void clearWorldData() {
-        List<Party> pList;
+        // List<Party> pList;
         partyLock.lock();
         try {
-            pList = new ArrayList<>(parties.values());
+            // pList = new ArrayList<>(parties.values());
         } finally {
             partyLock.unlock();
         }

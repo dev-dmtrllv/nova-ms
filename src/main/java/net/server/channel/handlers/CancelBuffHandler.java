@@ -4,11 +4,10 @@ import client.Client;
 import client.SkillFactory;
 import constants.skills.*;
 import net.AbstractPacketHandler;
-import net.PacketHandler;
 import net.packet.InPacket;
 import tools.PacketCreator;
 
-public final class CancelBuffHandler extends AbstractPacketHandler implements PacketHandler {
+public final class CancelBuffHandler extends AbstractPacketHandler {
 
     @Override
     public final void handlePacket(InPacket p, Client c) {

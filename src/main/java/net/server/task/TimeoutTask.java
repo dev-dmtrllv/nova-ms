@@ -10,7 +10,7 @@ import java.util.Collection;
 /**
  * @author Shavit
  */
-public class TimeoutTask extends BaseTask implements Runnable {
+public class TimeoutTask extends BaseTask {
     private static final Logger log = LoggerFactory.getLogger(TimeoutTask.class);
 
     @Override

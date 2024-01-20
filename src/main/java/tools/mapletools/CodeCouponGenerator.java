@@ -57,7 +57,7 @@ public class CodeCouponGenerator {
     private static String getName(String token) {
         int i, j;
         char[] dest;
-        String d;
+        // String d;
 
         i = token.lastIndexOf("name");
         i = token.indexOf("\"", i) + 1; //lower bound of the string

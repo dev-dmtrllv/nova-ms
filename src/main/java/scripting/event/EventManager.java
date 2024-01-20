@@ -117,15 +117,15 @@ public class EventManager {
         iv = null;
     }
 
-    private List<Integer> convertToIntegerList(List<Object> objects) {
-        List<Integer> intList = new ArrayList<>();
+    // private List<Integer> convertToIntegerList(List<Object> objects) {
+    //     List<Integer> intList = new ArrayList<>();
 
-        for (Object object : objects) {
-            intList.add((Integer) object);
-        }
+    //     for (Object object : objects) {
+    //         intList.add((Integer) object);
+    //     }
 
-        return intList;
-    }
+    //     return intList;
+    // }
 
     public long getLobbyDelay() {
         return YamlConfig.config.server.EVENT_LOBBY_DELAY;

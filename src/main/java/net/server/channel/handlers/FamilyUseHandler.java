@@ -72,33 +72,33 @@ public final class FamilyUseHandler extends AbstractPacketHandler {
         } else if (type == FamilyEntitlement.FAMILY_BONDING) {
             //not implemented
         } else {
-            boolean party = false;
-            boolean isExp = false;
-            float rate = 1.5f;
-            int duration = 15;
+            // boolean party = false;
+            // boolean isExp = false;
+            // float rate = 1.5f;
+            // int duration = 15;
             do {
                 switch (type) {
                     case PARTY_EXP_2_30MIN:
-                        party = true;
-                        isExp = true;
+                        // party = true;
+                        // isExp = true;
                         type = FamilyEntitlement.SELF_EXP_2_30MIN;
                         continue;
                     case PARTY_DROP_2_30MIN:
-                        party = true;
+                        // party = true;
                         type = FamilyEntitlement.SELF_DROP_2_30MIN;
                         continue;
                     case SELF_DROP_2_30MIN:
-                        duration = 30;
+                        // duration = 30;
                     case SELF_DROP_2:
-                        rate = 2.0f;
+                        // rate = 2.0f;
                     case SELF_DROP_1_5:
                         break;
                     case SELF_EXP_2_30MIN:
-                        duration = 30;
+                        // duration = 30;
                     case SELF_EXP_2:
-                        rate = 2.0f;
+                        // rate = 2.0f;
                     case SELF_EXP_1_5:
-                        isExp = true;
+                        // isExp = true;
                     default:
                         break;
                 }

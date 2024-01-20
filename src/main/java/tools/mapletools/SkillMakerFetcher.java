@@ -41,7 +41,7 @@ public class SkillMakerFetcher {
     private static int quantity = -1;
     private static int tuc = -1;
 
-    private static int recipePos = -1;
+    // private static int recipePos = -1;
     private static int recipeProb = -1;
     private static int recipeCount = -1;
     private static int recipeItem = -1;
@@ -60,7 +60,7 @@ public class SkillMakerFetcher {
         quantity = 0;
         tuc = 0;
 
-        recipePos = 0;
+        // recipePos = 0;
         recipeProb = 0;
         recipeCount = 0;
         recipeItem = 0;
@@ -185,7 +185,7 @@ public class SkillMakerFetcher {
                 }
             } else if (status == 4) {  // inside recipe/random
                 d = getName(token);
-                recipePos = Integer.parseInt(d);
+                // recipePos = Integer.parseInt(d);
             }
 
             status += 1;

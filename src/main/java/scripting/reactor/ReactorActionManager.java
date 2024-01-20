@@ -29,13 +29,13 @@ import java.util.concurrent.ScheduledFuture;
  */
 public class ReactorActionManager extends AbstractPlayerInteraction {
     private final Reactor reactor;
-    private final Invocable iv;
+    // private final Invocable iv;
     private ScheduledFuture<?> sprayTask = null;
 
-    public ReactorActionManager(Client c, Reactor reactor, Invocable iv) {
+    public ReactorActionManager(Client c, Reactor reactor, @SuppressWarnings("unused") Invocable iv) {
         super(c);
         this.reactor = reactor;
-        this.iv = iv;
+        // this.iv = iv;
     }
 
     public void hitReactor() {

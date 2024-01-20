@@ -25,7 +25,7 @@ public class ExpeditionBossLog {
         PAPULATUS(2, 1, false);
 
         private final int entries;
-        private final int timeLength;
+        // private final int timeLength;
         private final int minChannel;
         private final int maxChannel;
         private final boolean week;
@@ -34,11 +34,11 @@ public class ExpeditionBossLog {
             this(entries, 0, Integer.MAX_VALUE, timeLength, week);
         }
 
-        BossLogEntry(int entries, int minChannel, int maxChannel, int timeLength, boolean week) {
+        BossLogEntry(int entries, int minChannel, int maxChannel, @SuppressWarnings("unused") int timeLength, boolean week) {
             this.entries = entries;
             this.minChannel = minChannel;
             this.maxChannel = maxChannel;
-            this.timeLength = timeLength;
+            // this.timeLength = timeLength;
             this.week = week;
         }
 

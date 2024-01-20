@@ -62,6 +62,8 @@ public class Equip extends Item {
         incSpeed(12), incJump(13), incVicious(14), incSlot(15);
         private int value = -1;
 
+		public int getValue() { return value; }
+
         StatUpgrade(int value) {
             this.value = value;
         }

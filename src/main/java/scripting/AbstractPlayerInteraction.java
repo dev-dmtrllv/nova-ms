@@ -58,7 +58,7 @@ import java.awt.*;
 import java.util.List;
 import java.util.*;
 
-import static java.util.concurrent.TimeUnit.DAYS;
+// import static java.util.concurrent.TimeUnit.DAYS;
 
 public class AbstractPlayerInteraction {
 
@@ -524,14 +524,14 @@ public class AbstractPlayerInteraction {
         Pet evolved = null;
         Pet target;
 
-        long period = DAYS.toMillis(90);    //refreshes expiration date: 90 days
+        // long period = DAYS.toMillis(90);    //refreshes expiration date: 90 days
         target = getPlayer().getPet(slot);
         if (target == null) {
             getPlayer().message("Pet could not be evolved...");
             return (null);
         }
 
-        Item tmp = gainItem(afterId, (short) 1, false, true, period, target);
+        // Item tmp = gainItem(afterId, (short) 1, false, true, period, target);
             
             /*
             evolved = Pet.loadFromDb(tmp.getItemId(), tmp.getPosition(), tmp.getPetId());

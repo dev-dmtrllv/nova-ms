@@ -145,7 +145,7 @@ public class Inventory implements Iterable<Item> {
                 }
             }
         } else {
-            for (Item item : itemList) {
+            for (@SuppressWarnings("unused") Item item : itemList) {
                 required -= 1;
 
                 if (required >= 0) {

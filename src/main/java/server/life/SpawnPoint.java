@@ -39,17 +39,17 @@ public class SpawnPoint {
     private long nextPossibleSpawn;
     private int mobInterval = 5000;
     private final AtomicInteger spawnedMonsters = new AtomicInteger(0);
-    private final boolean immobile;
+    // private final boolean immobile;
     private boolean denySpawn = false;
 
-    public SpawnPoint(final Monster monster, Point pos, boolean immobile, int mobTime, int mobInterval, int team) {
+    public SpawnPoint(final Monster monster, Point pos, @SuppressWarnings("unused") boolean immobile, int mobTime, int mobInterval, int team) {
         this.monster = monster.getId();
         this.pos = new Point(pos);
         this.mobTime = mobTime;
         this.team = team;
         this.fh = monster.getFh();
         this.f = monster.getF();
-        this.immobile = immobile;
+        // this.immobile = immobile;
         this.mobInterval = mobInterval;
         this.nextPossibleSpawn = Server.getInstance().getCurrentTime();
     }

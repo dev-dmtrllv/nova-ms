@@ -34,10 +34,10 @@ import java.util.List;
  */
 public class InfoExRequirement extends AbstractQuestRequirement {
     private final List<String> infoExpected = new ArrayList<>();
-    private final int questID;
+    // private final int questID;
     public InfoExRequirement(Quest quest, Data data) {
         super(QuestRequirementType.INFO_EX);
-        questID = quest.getId();
+        // questID = quest.getId();
         processData(data);
     }
 

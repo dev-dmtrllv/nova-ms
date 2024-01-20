@@ -23,9 +23,9 @@ public final class CoconutHandler extends AbstractPacketHandler {
         if (!nut.isHittable()) {
             return;
         }
-        if (event == null) {
-            return;
-        }
+        // if (event == null) {
+        //     return;
+        // }
         if (currentServerTime() < nut.getHitTime()) {
             return;
         }

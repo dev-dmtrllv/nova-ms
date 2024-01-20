@@ -317,9 +317,9 @@ public final class InventorySortHandler extends AbstractPacketHandler {
                 mods.add(new ModifyInventory(3, item));
             }
 
-            int invTypeCriteria = (InventoryType.getByType(invType) == InventoryType.EQUIP) ? 3 : 1;
-            int sortCriteria = (YamlConfig.config.server.USE_ITEM_SORT_BY_NAME == true) ? 2 : 0;
-            PairedQuicksort pq = new PairedQuicksort(itemarray, sortCriteria, invTypeCriteria);
+            // int invTypeCriteria = (InventoryType.getByType(invType) == InventoryType.EQUIP) ? 3 : 1;
+            // int sortCriteria = (YamlConfig.config.server.USE_ITEM_SORT_BY_NAME == true) ? 2 : 0;
+            // PairedQuicksort pq = new PairedQuicksort(itemarray, sortCriteria, invTypeCriteria);
 
             for (Item item : itemarray) {
                 inventory.addItem(item);

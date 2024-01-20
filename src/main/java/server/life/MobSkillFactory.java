@@ -87,7 +87,7 @@ public class MobSkillFactory {
                 }
                 toSummon.add(DataTool.getInt(skillData.getChildByPath(String.valueOf(i)), 0));
             }
-            int effect = DataTool.getInt("summonEffect", skillData, 0);
+            // int effect = DataTool.getInt("summonEffect", skillData, 0);
             int hp = DataTool.getInt("hp", skillData, 100);
             int x = DataTool.getInt("x", skillData, 1);
             int y = DataTool.getInt("y", skillData, 1);

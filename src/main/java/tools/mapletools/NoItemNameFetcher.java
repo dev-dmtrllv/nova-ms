@@ -290,6 +290,7 @@ public class NoItemNameFetcher {
                 case ETC -> etcList.add(ids.getKey());
                 case INS -> insList.add(ids.getKey());
                 case PET -> petList.add(ids.getKey());
+				default -> {}
             }
         }
 
@@ -405,7 +406,8 @@ public class NoItemNameFetcher {
             } else {
                 int arraySize = EquipType.values().length;
 
-                List<Integer>[] equips = new List[arraySize];
+				@SuppressWarnings("unchecked")
+                List<Integer>[] equips = (List<Integer>[]) new List[arraySize];
                 for (int i = 0; i < arraySize; i++) {
                     equips[i] = new ArrayList<>(42);
                 }

@@ -29,8 +29,8 @@ import constants.id.MobId;
 import constants.skills.Bishop;
 import net.server.services.task.channel.OverallService;
 import net.server.services.type.ChannelServices;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+// import org.slf4j.Logger;
+// import org.slf4j.LoggerFactory;
 import server.maps.MapObject;
 import server.maps.MapObjectType;
 import server.maps.MapleMap;
@@ -44,7 +44,7 @@ import java.util.*;
  * @author Danny (Leifde)
  */
 public class MobSkill {
-    private static final Logger log = LoggerFactory.getLogger(MobSkill.class);
+    // private static final Logger log = LoggerFactory.getLogger(MobSkill.class);
 
     private final MobSkillId id;
     private final int mpCon;
@@ -243,6 +243,7 @@ public class MobSkill {
             case SPEED -> stats.put(MonsterStatus.SPEED, x);
             case SEAL_SKILL -> stats.put(MonsterStatus.SEAL_SKILL, x);
             case SUMMON -> summonMonsters(monster);
+			default -> {}
         }
         if (stats.size() > 0) {
             applyMonsterBuffs(stats, skill, monster, reflection);

@@ -3,13 +3,13 @@ package server.events.gm;
  * @author kevintjuh93
  */
 public class Coconuts {
-    private final int id;
+    // private final int id;
     private int hits = 0;
     private boolean hittable = false;
     private long hittime = System.currentTimeMillis();
 
-    public Coconuts(int id) {
-        this.id = id;
+    public Coconuts(@SuppressWarnings("unused") int id) {
+        // this.id = id;
     }
 
     public void hit() {

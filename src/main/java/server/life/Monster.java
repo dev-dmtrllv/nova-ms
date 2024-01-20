@@ -29,9 +29,9 @@ import config.YamlConfig;
 import constants.id.MobId;
 import constants.skills.*;
 import net.packet.Packet;
-import net.server.channel.Channel;
+// import net.server.channel.Channel;
 import net.server.coordinator.world.MonsterAggroCoordinator;
-import net.server.services.task.channel.MobAnimationService;
+// import net.server.services.task.channel.MobAnimationService;
 import net.server.services.task.channel.MobClearSkillService;
 import net.server.services.task.channel.MobStatusService;
 import net.server.services.task.channel.OverallService;
@@ -98,7 +98,7 @@ public class Monster extends AbstractLoadedLife {
     private final Lock externalLock = new ReentrantLock();
     private final Lock monsterLock = new ReentrantLock(true);
     private final Lock statiLock = new ReentrantLock();
-    private final Lock animationLock = new ReentrantLock();
+    // private final Lock animationLock = new ReentrantLock();
     private final Lock aggroUpdateLock = new ReentrantLock();
 
     public Monster(int id, MonsterStats stats) {
@@ -306,30 +306,30 @@ public class Monster extends AbstractLoadedLife {
         applyAndGetHpDamage(Integer.MAX_VALUE, false);
     }
 
-    private boolean applyAnimationIfRoaming(int attackPos, MobSkill skill) {   // roam: not casting attack or skill animations
-        if (!animationLock.tryLock()) {
-            return false;
-        }
+    // private boolean applyAnimationIfRoaming(int attackPos, MobSkill skill) {   // roam: not casting attack or skill animations
+    //     if (!animationLock.tryLock()) {
+    //         return false;
+    //     }
 
-        try {
-            long animationTime;
+    //     try {
+    //         long animationTime;
 
-            if (skill == null) {
-                animationTime = MonsterInformationProvider.getInstance().getMobAttackAnimationTime(this.getId(), attackPos);
-            } else {
-                animationTime = MonsterInformationProvider.getInstance().getMobSkillAnimationTime(skill);
-            }
+    //         if (skill == null) {
+    //             animationTime = MonsterInformationProvider.getInstance().getMobAttackAnimationTime(this.getId(), attackPos);
+    //         } else {
+    //             animationTime = MonsterInformationProvider.getInstance().getMobSkillAnimationTime(skill);
+    //         }
 
-            if (animationTime > 0) {
-                MobAnimationService service = (MobAnimationService) map.getChannelServer().getServiceAccess(ChannelServices.MOB_ANIMATION);
-                return service.registerMobOnAnimationEffect(map.getId(), this.hashCode(), animationTime);
-            } else {
-                return true;
-            }
-        } finally {
-            animationLock.unlock();
-        }
-    }
+    //         if (animationTime > 0) {
+    //             MobAnimationService service = (MobAnimationService) map.getChannelServer().getServiceAccess(ChannelServices.MOB_ANIMATION);
+    //             return service.registerMobOnAnimationEffect(map.getId(), this.hashCode(), animationTime);
+    //         } else {
+    //             return true;
+    //         }
+    //     } finally {
+    //         animationLock.unlock();
+    //     }
+    // }
 
     public synchronized Integer applyAndGetHpDamage(int delta, boolean stayAlive) {
         int curHp = hp.get();
@@ -1157,7 +1157,7 @@ public class Monster extends AbstractLoadedLife {
             }
         }
 
-        final Channel ch = map.getChannelServer();
+        // final Channel ch = map.getChannelServer();
         final int mapid = map.getId();
         if (statis.size() > 0) {
             statiLock.lock();

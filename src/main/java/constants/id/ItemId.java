@@ -414,7 +414,7 @@ public class ItemId {
 
     // Explorer mount
     public static final int HOG = 1902000;
-    private static final int SILVER_MANE = 1902001;
+    // private static final int SILVER_MANE = 1902001;
     private static final int RED_DRACO = 1902002;
     private static final int EXPLORER_SADDLE = 1912000;
 
@@ -424,7 +424,7 @@ public class ItemId {
 
     // Cygnus mount
     private static final int MIMIANA = 1902005;
-    private static final int MIMIO = 1902006;
+    // private static final int MIMIO = 1902006;
     private static final int SHINJOU = 1902007;
     private static final int CYGNUS_SADDLE = 1912005;
 

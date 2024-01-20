@@ -27,9 +27,9 @@ public class CharacterSaveService extends BaseService {
             registerEntry(characterId, runAction, 0);
         }
 
-        public void unregisterSaveCharacter(Integer characterId) {
-            interruptEntry(characterId);
-        }
+        // public void unregisterSaveCharacter(Integer characterId) {
+        //     interruptEntry(characterId);
+        // }
 
     }
 

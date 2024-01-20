@@ -6,7 +6,7 @@ import constants.id.ItemId;
 import constants.id.MapId;
 import server.TimerManager;
 import server.expeditions.Expedition;
-import server.expeditions.ExpeditionType;
+// import server.expeditions.ExpeditionType;
 import server.maps.MapleMap;
 import tools.PacketCreator;
 
@@ -228,16 +228,16 @@ public class AriantColiseum {
         }
     }
 
-    private ExpeditionType getExpeditionType() {
-        switch (map.getId()) {
-        case MapId.ARPQ_ARENA_1:
-            return ExpeditionType.ARIANT;
-        case MapId.ARPQ_ARENA_2:
-            return ExpeditionType.ARIANT1;
-        default:
-            return ExpeditionType.ARIANT2;
-        }
-    }
+    // private ExpeditionType getExpeditionType() {
+    //     switch (map.getId()) {
+    //     case MapId.ARPQ_ARENA_1:
+    //         return ExpeditionType.ARIANT;
+    //     case MapId.ARPQ_ARENA_2:
+    //         return ExpeditionType.ARIANT1;
+    //     default:
+    //         return ExpeditionType.ARIANT2;
+    //     }
+    // }
 
     private void enterKingsRoom() {
         exped.removeChannelExpedition(map.getChannelServer());

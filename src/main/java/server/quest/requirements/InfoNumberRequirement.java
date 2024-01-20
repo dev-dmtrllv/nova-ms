@@ -11,11 +11,11 @@ import server.quest.QuestRequirementType;
 public class InfoNumberRequirement extends AbstractQuestRequirement {
 
     private short infoNumber;
-    private final int questID;
+    // private final int questID;
 
     public InfoNumberRequirement(Quest quest, Data data) {
         super(QuestRequirementType.INFO_NUMBER);
-        questID = quest.getId();
+        // questID = quest.getId();
         processData(data);
     }
 

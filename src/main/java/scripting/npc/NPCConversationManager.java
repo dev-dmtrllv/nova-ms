@@ -83,7 +83,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
     private String scriptName;
     private String getText;
     private boolean itemScript;
-    private List<PartyCharacter> otherParty;
+    // private List<PartyCharacter> otherParty;
 
     private final Map<Integer, String> npcDefaultTalks = new HashMap<>();
 
@@ -101,11 +101,11 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
         this(c, npc, -1, scriptName, false);
     }
 
-    public NPCConversationManager(Client c, int npc, List<PartyCharacter> otherParty, boolean test) {
+    public NPCConversationManager(Client c, int npc, @SuppressWarnings("unused") List<PartyCharacter> otherParty, boolean test) {
         super(c);
         this.c = c;
         this.npc = npc;
-        this.otherParty = otherParty;
+        // this.otherParty = otherParty;
     }
 
     public NPCConversationManager(Client c, int npc, int oid, String scriptName, boolean itemScript) {

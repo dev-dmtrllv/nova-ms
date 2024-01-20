@@ -31,7 +31,7 @@ public class IntervalBuilder {
             newLimitX1 = (float) ((newFrom < firstLimit.getX1()) ? newFrom : firstLimit.getX1());
             newLimitX2 = (float) ((newTo > lastLimit.getX2()) ? newTo : lastLimit.getX2());
 
-            for (Line2D limit : checkLimits) {
+            for (@SuppressWarnings("unused") Line2D limit : checkLimits) {
                 intervalLimits.remove(st);
             }
         } else {

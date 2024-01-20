@@ -13,7 +13,7 @@ public class PartySearchCharacter {
     private boolean queued;
 
     public PartySearchCharacter(Character chr) {
-        player = new WeakReference(chr);
+        player = new WeakReference<Character>(chr);
         level = chr.getLevel();
         queued = true;
     }

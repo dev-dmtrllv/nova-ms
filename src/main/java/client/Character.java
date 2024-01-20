@@ -3500,21 +3500,21 @@ public class Character extends AbstractCharacterObject {
         buffExpires.remove(sourceid);
     }
 
-    private void dropWorstEffectFromItemEffectHolder(BuffStat mbs) {
-        Integer min = Integer.MAX_VALUE;
-        Integer srcid = -1;
-        for (Entry<Integer, Map<BuffStat, BuffStatValueHolder>> bpl : buffEffects.entrySet()) {
-            BuffStatValueHolder mbsvh = bpl.getValue().get(mbs);
-            if (mbsvh != null) {
-                if (mbsvh.value < min) {
-                    min = mbsvh.value;
-                    srcid = bpl.getKey();
-                }
-            }
-        }
+    // private void dropWorstEffectFromItemEffectHolder(BuffStat mbs) {
+    //     Integer min = Integer.MAX_VALUE;
+    //     Integer srcid = -1;
+    //     for (Entry<Integer, Map<BuffStat, BuffStatValueHolder>> bpl : buffEffects.entrySet()) {
+    //         BuffStatValueHolder mbsvh = bpl.getValue().get(mbs);
+    //         if (mbsvh != null) {
+    //             if (mbsvh.value < min) {
+    //                 min = mbsvh.value;
+    //                 srcid = bpl.getKey();
+    //             }
+    //         }
+    //     }
 
-        removeEffectFromItemEffectHolder(srcid, mbs);
-    }
+    //     removeEffectFromItemEffectHolder(srcid, mbs);
+    // }
 
     private BuffStatValueHolder fetchBestEffectFromItemEffectHolder(BuffStat mbs) {
         Pair<Integer, Integer> max = new Pair<>(Integer.MIN_VALUE, 0);
@@ -4133,7 +4133,7 @@ public class Character extends AbstractCharacterObject {
             }
         }
 
-        Comparator cmp = new Comparator<Pair<StatEffect, Integer>>() {
+        Comparator<Pair<StatEffect, Integer>> cmp = new Comparator<Pair<StatEffect, Integer>>() {
             @Override
             public int compare(Pair<StatEffect, Integer> o1, Pair<StatEffect, Integer> o2) {
                 return o2.getRight().compareTo(o1.getRight());
@@ -6262,7 +6262,7 @@ public class Character extends AbstractCharacterObject {
         int maxSp = getJobMaxSp(job);
 
         spGain = Math.min(spGain, maxSp - curSp);
-        int jobBranch = GameConstants.getJobBranch(job);
+        // int jobBranch = GameConstants.getJobBranch(job);
         return spGain;
     }
 
@@ -8245,7 +8245,7 @@ public class Character extends AbstractCharacterObject {
             return;
         }
 
-        Calendar c = Calendar.getInstance();
+        // Calendar c = Calendar.getInstance();
         log.debug("Attempting to {} chr {}", notAutosave ? "save" : "autosave", name);
 
         Server.getInstance().updateCharacterEntry(this);
@@ -9419,6 +9419,7 @@ public class Character extends AbstractCharacterObject {
                 case incMDD:
                     incVal = (float) Math.log(incVal);
                     break;
+				default: break;
             }
 
             if (newVal != null) {
@@ -10292,7 +10293,7 @@ public class Character extends AbstractCharacterObject {
         this.partyQuest = pq;
     }
 
-    public void setCpqTimer(ScheduledFuture timer) {
+    public void setCpqTimer(ScheduledFuture<?> timer) {
         this.cpqSchedule = timer;
     }
 

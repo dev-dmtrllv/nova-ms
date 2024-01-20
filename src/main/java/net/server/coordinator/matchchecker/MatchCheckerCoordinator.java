@@ -7,7 +7,7 @@ import net.server.coordinator.matchchecker.MatchCheckerListenerFactory.MatchChec
 import net.server.world.World;
 
 import java.util.*;
-import java.util.Map.Entry;
+// import java.util.Map.Entry;
 import java.util.concurrent.Semaphore;
 /**
  * @author Ronan
@@ -21,10 +21,10 @@ public class MatchCheckerCoordinator {
 
     private class MatchCheckingEntry {
         private boolean accepted;
-        private final int cid;
+        // private final int cid;
 
-        private MatchCheckingEntry(int cid) {
-            this.cid = cid;
+        private MatchCheckingEntry(@SuppressWarnings("unused") int cid) {
+            // this.cid = cid;
             this.accepted = false;
         }
 
@@ -37,9 +37,9 @@ public class MatchCheckerCoordinator {
             }
         }
 
-        private boolean getAccept() {
-            return this.accepted;
-        }
+        // private boolean getAccept() {
+        //     return this.accepted;
+        // }
     }
 
     private class MatchCheckingElement {
@@ -94,17 +94,17 @@ public class MatchCheckerCoordinator {
             return confirmingMembers.keySet();
         }
 
-        private Set<Integer> getAcceptedMatchPlayers() {
-            Set<Integer> s = new HashSet<>();
+        // private Set<Integer> getAcceptedMatchPlayers() {
+        //     Set<Integer> s = new HashSet<>();
 
-            for (Entry<Integer, MatchCheckingEntry> e : confirmingMembers.entrySet()) {
-                if (e.getValue().getAccept()) {
-                    s.add(e.getKey());
-                }
-            }
+        //     for (Entry<Integer, MatchCheckingEntry> e : confirmingMembers.entrySet()) {
+        //         if (e.getValue().getAccept()) {
+        //             s.add(e.getKey());
+        //         }
+        //     }
 
-            return s;
-        }
+        //     return s;
+        // }
 
         private Set<Character> getMatchCharacters() {
             Set<Character> players = new HashSet<>();

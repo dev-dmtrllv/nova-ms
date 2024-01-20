@@ -65,8 +65,8 @@ public class StatEffect {
     private short mhpRRate, mmpRRate, mobSkill, mobSkillLevel;
     private byte mhpR, mmpR;
     private short mpCon, hpCon;
-    private int duration, target, barrier, mob;
-    private boolean overTime, repeatEffect;
+    private int duration, target, barrier ; //, mob;
+    private boolean overTime; //, repeatEffect;
     private int sourceid;
     private int moveTo;
     private int cp, nuffSkill;
@@ -206,7 +206,7 @@ public class StatEffect {
         ret.morphId = DataTool.getInt("morph", source, 0);
         ret.ghost = DataTool.getInt("ghost", source, 0);
         ret.fatigue = DataTool.getInt("incFatigue", source, 0);
-        ret.repeatEffect = DataTool.getInt("repeatEffect", source, 0) > 0;
+        // ret.repeatEffect = DataTool.getInt("repeatEffect", source, 0) > 0;
 
         Data mdd = source.getChildByPath("0");
         if (mdd != null && mdd.getChildren().size() > 0) {
@@ -219,12 +219,12 @@ public class StatEffect {
             ret.target = 0;
         }
 
-        Data mdds = source.getChildByPath("mob");
-        if (mdds != null) {
-            if (mdds.getChildren() != null && mdds.getChildren().size() > 0) {
-                ret.mob = DataTool.getInt("mob", mdds, 0);
-            }
-        }
+        // Data mdds = source.getChildByPath("mob");
+        // if (mdds != null) {
+            // if (mdds.getChildren() != null && mdds.getChildren().size() > 0) {
+                // ret.mob = DataTool.getInt("mob", mdds, 0);
+            // }
+        // }
         ret.sourceid = sourceid;
         ret.skill = skill;
         if (!ret.skill && ret.duration > -1) {

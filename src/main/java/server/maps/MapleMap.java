@@ -417,29 +417,29 @@ public class MapleMap {
         }
     }
 
-    private void spawnRangedMapObject(MapObject mapobject, DelayedPacketCreation packetbakery, SpawnCondition condition) {
-        List<Character> inRangeCharacters = new LinkedList<>();
+    // private void spawnRangedMapObject(MapObject mapobject, DelayedPacketCreation packetbakery, SpawnCondition condition) {
+    //     List<Character> inRangeCharacters = new LinkedList<>();
 
-        chrRLock.lock();
-        try {
-            int curOID = getUsableOID();
-            mapobject.setObjectId(curOID);
-            for (Character chr : characters) {
-                if (condition == null || condition.canSpawn(chr)) {
-                    if (chr.getPosition().distanceSq(mapobject.getPosition()) <= getRangedDistance()) {
-                        inRangeCharacters.add(chr);
-                        chr.addVisibleMapObject(mapobject);
-                    }
-                }
-            }
-        } finally {
-            chrRLock.unlock();
-        }
+    //     chrRLock.lock();
+    //     try {
+    //         int curOID = getUsableOID();
+    //         mapobject.setObjectId(curOID);
+    //         for (Character chr : characters) {
+    //             if (condition == null || condition.canSpawn(chr)) {
+    //                 if (chr.getPosition().distanceSq(mapobject.getPosition()) <= getRangedDistance()) {
+    //                     inRangeCharacters.add(chr);
+    //                     chr.addVisibleMapObject(mapobject);
+    //                 }
+    //             }
+    //         }
+    //     } finally {
+    //         chrRLock.unlock();
+    //     }
 
-        for (Character chr : inRangeCharacters) {
-            packetbakery.sendPackets(chr.getClient());
-        }
-    }
+    //     for (Character chr : inRangeCharacters) {
+    //         packetbakery.sendPackets(chr.getClient());
+    //     }
+    // }
 
     private int getUsableOID() {
         objectRLock.lock();
@@ -714,7 +714,7 @@ public class MapleMap {
         final byte droptype = (byte) (mob.getStats().isExplosiveReward() ? 3 : mob.getStats().isFfaLoot() ? 2 : chr.getParty() != null ? 1 : 0);
         final int mobpos = mob.getPosition().x;
         int chRate = !mob.isBoss() ? chr.getDropRate() : chr.getBossDropRate();
-        byte d = 1;
+        // byte d = 1;
         Point pos = new Point(0, mob.getPosition().y);
 
         MonsterStatusEffect stati = mob.getStati(MonsterStatus.SHOWDOWN);

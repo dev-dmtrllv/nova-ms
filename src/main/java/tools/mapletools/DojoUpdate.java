@@ -24,7 +24,7 @@ import java.time.Instant;
 public class DojoUpdate {
 	private static final Path INPUT_DIRECTORY = WZFiles.MAP.getFile().resolve("Map").resolve("Map9");
     private static final Path OUTPUT_DIRECTORY = ToolConstants.getOutputFile("dojo-maps");
-    private static final Path WORKING_DIRECTORY = Path.of("").toAbsolutePath();
+    // private static final Path WORKING_DIRECTORY = Path.of("").toAbsolutePath();
     private static final int DOJO_MIN_MAP_ID = 925_020_100;
     private static final int DOJO_MAX_MAP_ID = 925_033_804;
     private static final int INITIAL_STRING_LENGTH = 250;

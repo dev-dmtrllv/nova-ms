@@ -61,21 +61,21 @@ public class CashCosmeticsChecker {
         return (d.trim());
     }
 
-    private static String getValue(String token) {
-        int i, j;
-        char[] dest;
-        String d;
+    // private static String getValue(String token) {
+    //     int i, j;
+    //     char[] dest;
+    //     String d;
 
-        i = token.lastIndexOf("value");
-        i = token.indexOf("\"", i) + 1; //lower bound of the string
-        j = token.indexOf("\"", i);     //upper bound
+    //     i = token.lastIndexOf("value");
+    //     i = token.indexOf("\"", i) + 1; //lower bound of the string
+    //     j = token.indexOf("\"", i);     //upper bound
 
-        dest = new char[INITIAL_STRING_LENGTH];
-        token.getChars(i, j, dest, 0);
+    //     dest = new char[INITIAL_STRING_LENGTH];
+    //     token.getChars(i, j, dest, 0);
 
-        d = new String(dest);
-        return (d.trim());
-    }
+    //     d = new String(dest);
+    //     return (d.trim());
+    // }
 
     private static void forwardCursor(int st) {
         String line = null;

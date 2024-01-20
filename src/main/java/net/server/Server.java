@@ -308,17 +308,17 @@ public class Server {
             return null;
         }
     }
-    private void dumpData() {
-        wldRLock.lock();
-        try {
-            log.debug("Worlds: {}", worlds);
-            log.debug("Channels: {}", channels);
-            log.debug("World recommended list: {}", worldRecommendedList);
-            log.debug("---------------------");
-        } finally {
-            wldRLock.unlock();
-        }
-    }
+    // private void dumpData() {
+    //     wldRLock.lock();
+    //     try {
+    //         log.debug("Worlds: {}", worlds);
+    //         log.debug("Channels: {}", channels);
+    //         log.debug("World recommended list: {}", worldRecommendedList);
+    //         log.debug("---------------------");
+    //     } finally {
+    //         wldRLock.unlock();
+    //     }
+    // }
 
     public int addChannel(int worldid) {
         World world;
@@ -1475,7 +1475,7 @@ public class Server {
         }
 
         SortedMap<Integer, List<Character>> worldChrs = new TreeMap<>();
-        int chrTotal = 0;
+        // int chrTotal = 0;
 
         lgnRLock.lock();
         try {

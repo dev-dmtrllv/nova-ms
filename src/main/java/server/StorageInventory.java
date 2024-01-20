@@ -3,7 +3,7 @@ package server;
 import client.Client;
 import client.inventory.Equip;
 import client.inventory.Item;
-import config.YamlConfig;
+// import config.YamlConfig;
 import constants.inventory.ItemConstants;
 
 import java.util.*;
@@ -29,9 +29,9 @@ public class StorageInventory {
         return slotLimit;
     }
 
-    private Collection<Item> list() {
-        return Collections.unmodifiableCollection(inventory.values());
-    }
+    // private Collection<Item> list() {
+    //     return Collections.unmodifiableCollection(inventory.values());
+    // }
 
     private short addItem(Item item) {
         short slotId = getNextFreeSlot();
@@ -198,9 +198,9 @@ public class StorageInventory {
             this.removeSlot(item.getPosition());
         }
 
-        int invTypeCriteria = 1;
-        int sortCriteria = (YamlConfig.config.server.USE_ITEM_SORT_BY_NAME == true) ? 2 : 0;
-        PairedQuicksort pq = new PairedQuicksort(itemarray, sortCriteria, invTypeCriteria);
+        // int invTypeCriteria = 1;
+        // int sortCriteria = (YamlConfig.config.server.USE_ITEM_SORT_BY_NAME == true) ? 2 : 0;
+        // PairedQuicksort pq = new PairedQuicksort(itemarray, sortCriteria, invTypeCriteria);
 
         inventory.clear();
         return itemarray;

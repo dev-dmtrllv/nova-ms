@@ -4,7 +4,7 @@ import net.server.world.World;
 /**
  * @author Ronan
  */
-public class HiredMerchantTask extends BaseTask implements Runnable {
+public class HiredMerchantTask extends BaseTask {
 
     @Override
     public void run() {

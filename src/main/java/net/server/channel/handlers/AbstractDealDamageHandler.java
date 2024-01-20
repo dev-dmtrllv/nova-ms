@@ -885,7 +885,7 @@ public abstract class AbstractDealDamageHandler extends AbstractPacketHandler {
         return ret;
     }
 
-    private static int rand(int l, int u) {
-        return (int) ((Math.random() * (u - l + 1)) + l);
-    }
+    // private static int rand(int l, int u) {
+    //     return (int) ((Math.random() * (u - l + 1)) + l);
+    // }
 }
