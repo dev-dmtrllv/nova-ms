@@ -1,7 +1,7 @@
-﻿# Cosmic - MapleStory v83 server
+﻿# NovaMS - MapleStory v83 server
 
 ## Introduction
-Cosmic launched as a successor to HeavenMS on March 21st 2021.
+NovaMS launched as a successor to HeavenMS on March 21st 2021.
 
 HeavenMS is archived, ie. it receives no further updates. This project aims to continue its development; mainly by improving code quality and make getting into PS development as easy as possible.
 
@@ -27,7 +27,7 @@ My time is very limited nowadays, but I try to keep up with the submitted pull r
 
 * Submit a Pull Request (fork -> commit -> PR). If you don't know where to start, have a look at the issues on GitHub.
 * Report a bug (preferably as an Issue on GitHub, as reports on Discord may be forgotten or lost)
-* Spread the word about Cosmic
+* Spread the word about NovaMS
 
 ### Working with GitHub
 
@@ -37,7 +37,7 @@ All activity on the GitHub repo (opening PR, commenting, creating issue, etc.) i
 
 Issues is the main place where bugs, issues or general improvements are tracked. Feel free to submit a new issue, but please keep it in English. By providing a good description, you increase the chance of a bug being fixed.
 
-Tasks (past, present and future) are kept in the Cosmic project, which you get to via the "Projects" tab. This gives you an idea of where the project is moving.
+Tasks (past, present and future) are kept in the NovaMS project, which you get to via the "Projects" tab. This gives you an idea of where the project is moving.
 
 ### Versioning
 
@@ -50,9 +50,9 @@ General improvements result in bumped minor version: 1.__2__.3 -> 1.__3__.3
 
 Major changes result in bumped major version: __1__.2.3 -> __2__.2.3
 
-### Cosmic
+### NovaMS
 
-- GitHub: https://github.com/P0nk/Cosmic
+- GitHub: https://github.com/P0nk/NovaMS
 - Discord: https://discord.gg/JU5aQapVZK
 
 ### HeavenMS
@@ -102,7 +102,7 @@ The localhost MapleStory client needs to be installed, as well as the server tha
 1. Install MapleStory with "MapleGlobal-v83-setup.exe" in your folder of choice (e.g. "C:\Nexon\MapleStory") and follow their instructions.
 2. Once done, erase these files: "HShield" (folder), "ASPLnchr.exe", "MapleStory.exe" and "Patcher.exe".
 3. Extract into the client folder the "HeavenMS-localhost-WINDOW.exe" (from now on referred to as "localhost.exe") from the provided link.
-4. Overwrite the original WZ files with the ones provided on the Google Drive: "CosmicWZ-v1-2021.05.10.zip"
+4. Overwrite the original WZ files with the ones provided on the Google Drive: "NovaMSWZ-v1-2021.05.10.zip"
 	- This is currently identical to the latest HeavenMS WZ files (except for the file name): "commit397_wz-20210321T173600Z-001.zip"
 
 #### Editing localhost IP target
@@ -134,7 +134,7 @@ Note: "lolwut.exe" is currently not available in the Google Drive.
 * Opening "lolwut.exe", use Fraysa's method.
 
 Important: should the client be refused a connection to the game server, it may be because of firewall issues. Head to the end of this file to proceed in allowing this connection through the computer's firewall. Alternatively, one can deactivate the firewall and try opening the client again.
-You can also search the server logs (/logs/cosmic-log.log) if any connection attempts have been made to ease debugging.
+You can also search the server logs (/logs/NovaMS-log.log) if any connection attempts have been made to ease debugging.
 
 ---
 ### Installing the server 
@@ -152,16 +152,16 @@ The easiest way to set up your project is to clone the repository directly into 
 
 1. Install IntelliJ
 2. Create a new "Project from Version Control..."
-3. Enter the URL to this GitHub repository: "https://github.com/P0nk/Cosmic.git"
+3. Enter the URL to this GitHub repository: "https://github.com/P0nk/NovaMS.git"
 4. Click on "Clone". A new project will now be created with all the files from the repository.
 
 #### Setting up the database
 
 1. Install MySQL Server 8 and MySQL Workbench 8.  
-2. Using Workbench, create a new user with username "cosmic_server" and password "snailshell". 
-   This the default configuration in Cosmic.
+2. Using Workbench, create a new user with username "NovaMS_server" and password "snailshell". 
+   This the default configuration in NovaMS.
    * (Optional) Restrict the Schema Privileges for this new user for improved security. 
-	 Add a new entry with "Schemas matching pattern: cosmic" and only select "SELECT", "INSERT", "UPDATE", "DELETE" under "Object Rights"
+	 Add a new entry with "Schemas matching pattern: NovaMS" and only select "SELECT", "INSERT", "UPDATE", "DELETE" under "Object Rights"
 3. Run the sql scripts in the "database/sql" directory of the project in the order indicated by their names. 
 	* Make sure you are connected to the database with the "root" user to be able to run the scripts.
 	* Run scripts one by one through the menu: "File" -> "Run SQL Script" -> select the script file to run -> "Run"
@@ -174,7 +174,7 @@ Use this info when you connect to MySQL Server for the first time:
 * Username: root
 * Password: <whatever password you set during MySQL Server installation>
 
-At the end of the execution of these sql scripts, you should have installed a database schema named "cosmic". 
+At the end of the execution of these sql scripts, you should have installed a database schema named "NovaMS". 
 REGISTER YOUR FIRST ACCOUNT to be used in-game by **manually creating** an entry in the table "accounts" in the database with a username and password.
 
 
@@ -191,7 +191,7 @@ To launch the server, you may either:
 
 #### Run inside IntelliJ
 1. Open the file src/main/java/net/server/Server.java.
-2. Click the green arrow to the left of the class definition "public class Server", and then "Run Cosmic". 
+2. Click the green arrow to the left of the class definition "public class Server", and then "Run NovaMS". 
    * Alternatively (recommended), create a new Configuration that points to "net.server.Server".
 3. The server launches in a terminal window inside IntelliJ.
 
@@ -230,7 +230,7 @@ This will display all available commands for the current GM level your character
 To change a character's GM level, make sure that character is not logged in, then:
 
 1. Open MySQL Workbench;
-2. Expand "cosmic" schema;
+2. Expand "NovaMS" schema;
 3. Expand "Tables";
 4. Right-click "characters" and click "Select Rows"
 5. Find your character in Result Grid. Scroll to the right and find the "gm" column.
@@ -265,7 +265,7 @@ The default login/password also varies, so use the link http://www.routerpasswor
 
 Now you have logged in the router system, search for anything related to portforwarding. Should the system prompt you between portforwarding and portriggering, pick the first, it is what we will be using.
 
-Now, it is needed to enable the right ports for the Internet. For Cosmic, it is basically needed to open ports 7575 to 7575 + (number of channels) and port 8484. Create a new custom service which enables that range of ports for the server's channel and opt to use TCP/UDP protocols. Finally, create a custom service now for using port 8484.
+Now, it is needed to enable the right ports for the Internet. For NovaMS, it is basically needed to open ports 7575 to 7575 + (number of channels) and port 8484. Create a new custom service which enables that range of ports for the server's channel and opt to use TCP/UDP protocols. Finally, create a custom service now for using port 8484.
 
 Optionally, if you want to host a webpage, portforward the port 80 (the HTTP port) as well.
 
