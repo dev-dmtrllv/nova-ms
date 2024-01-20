@@ -25,7 +25,6 @@ import server.quest.QuestActionType;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * @author Tyler (Twdtwd)
  */

@@ -31,7 +31,6 @@ import net.server.guild.Guild;
 import net.server.guild.GuildCharacter;
 import net.server.guild.GuildPackets;
 import tools.PacketCreator;
-
 /**
  * @author XoticStory, Ronan
  */

@@ -33,7 +33,6 @@ import server.StatEffect;
 import tools.PacketCreator;
 
 import java.util.List;
-
 /**
  * @author Ronan - multi-pot consumption feature
  */

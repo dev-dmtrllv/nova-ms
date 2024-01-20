@@ -6,7 +6,6 @@ import client.inventory.manipulator.InventoryManipulator;
 import constants.id.ItemId;
 import tools.PacketCreator;
 import tools.Randomizer;
-
 /**
  * @Author Arnah
  * @Website http://Vertisy.ca/

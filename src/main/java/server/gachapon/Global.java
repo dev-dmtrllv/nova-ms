@@ -1,7 +1,6 @@
 package server.gachapon;
 
 import constants.id.ItemId;
-
 /**
  * @author Alan (SharpAceX)
  * @author Ronan - added ores and reworked global loots

@@ -525,8 +525,6 @@ public class AbstractPlayerInteraction {
         Pet target;
 
         long period = DAYS.toMillis(90);    //refreshes expiration date: 90 days
-
-
         target = getPlayer().getPet(slot);
         if (target == null) {
             getPlayer().message("Pet could not be evolved...");

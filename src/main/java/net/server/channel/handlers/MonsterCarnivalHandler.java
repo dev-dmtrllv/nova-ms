@@ -40,7 +40,6 @@ import tools.Pair;
 import java.awt.*;
 import java.util.List;
 
-
 /**
  * @author Drago (Dragohe4rt)
  */

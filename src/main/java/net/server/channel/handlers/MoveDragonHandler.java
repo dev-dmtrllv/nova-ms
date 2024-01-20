@@ -29,8 +29,6 @@ import tools.PacketCreator;
 import tools.exceptions.EmptyMovementException;
 
 import java.awt.*;
-
-
 public class MoveDragonHandler extends AbstractMovementPacketHandler {
     @Override
     public void handlePacket(InPacket p, Client c) {

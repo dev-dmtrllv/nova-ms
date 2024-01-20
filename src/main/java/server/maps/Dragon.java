@@ -24,8 +24,6 @@ package server.maps;
 import client.Character;
 import client.Client;
 import tools.PacketCreator;
-
-
 public class Dragon extends AbstractAnimatedMapObject {
     private final Character owner;
 

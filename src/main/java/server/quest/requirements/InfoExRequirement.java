@@ -29,15 +29,12 @@ import server.quest.QuestRequirementType;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * @author Tyler (Twdtwd)
  */
 public class InfoExRequirement extends AbstractQuestRequirement {
     private final List<String> infoExpected = new ArrayList<>();
     private final int questID;
-
-
     public InfoExRequirement(Quest quest, Data data) {
         super(QuestRequirementType.INFO_EX);
         questID = quest.getId();
@@ -52,8 +49,6 @@ public class InfoExRequirement extends AbstractQuestRequirement {
             infoExpected.add(DataTool.getString(value, ""));
         }
     }
-
-
     @Override
     public boolean check(Character chr, Integer npcid) {
         return true;

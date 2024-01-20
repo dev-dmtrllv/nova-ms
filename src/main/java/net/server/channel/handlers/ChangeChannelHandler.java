@@ -26,7 +26,6 @@ import client.autoban.AutobanFactory;
 import net.AbstractPacketHandler;
 import net.packet.InPacket;
 import net.server.Server;
-
 /**
  * @author Matze
  */

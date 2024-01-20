@@ -1,5 +1,4 @@
 package server.gachapon;
-
 /**
  * @author Ronan - parsed MapleSEA loots
  * <p>

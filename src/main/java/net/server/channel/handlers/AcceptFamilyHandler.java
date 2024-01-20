@@ -40,7 +40,6 @@ import tools.PacketCreator;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
 /**
  * @author Jay Estrella
  * @author Ubaware

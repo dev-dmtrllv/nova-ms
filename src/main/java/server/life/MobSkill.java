@@ -40,7 +40,6 @@ import tools.Randomizer;
 import java.awt.*;
 import java.util.List;
 import java.util.*;
-
 /**
  * @author Danny (Leifde)
  */

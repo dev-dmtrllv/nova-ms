@@ -34,7 +34,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -46,8 +45,6 @@ public class SkillAction extends AbstractQuestAction {
         super(QuestActionType.SKILL, quest);
         processData(data);
     }
-
-
     @Override
     public void processData(Data data) {
         for (Data sEntry : data) {
@@ -116,7 +113,5 @@ public class SkillAction extends AbstractQuestAction {
         public boolean jobsContains(Job job) {
             return jobs.contains(job.getId());
         }
-
-
     }
 } 

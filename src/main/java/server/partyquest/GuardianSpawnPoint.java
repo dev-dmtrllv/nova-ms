@@ -1,7 +1,6 @@
 package server.partyquest;
 
 import java.awt.*;
-
 /**
  * @author David
  */

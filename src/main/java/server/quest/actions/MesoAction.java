@@ -27,7 +27,6 @@ import provider.Data;
 import provider.DataTool;
 import server.quest.Quest;
 import server.quest.QuestActionType;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -39,8 +38,6 @@ public class MesoAction extends AbstractQuestAction {
         questID = quest.getId();
         processData(data);
     }
-
-
     @Override
     public void processData(Data data) {
         mesos = DataTool.getInt(data);

@@ -8,7 +8,6 @@ import net.AbstractPacketHandler;
 import net.packet.InPacket;
 import scripting.quest.QuestScriptManager;
 import server.quest.Quest;
-
 /**
  * @author Xari
  */

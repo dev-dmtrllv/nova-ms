@@ -4,7 +4,6 @@ import net.jcip.annotations.ThreadSafe;
 
 import javax.script.Invocable;
 import javax.script.ScriptException;
-
 /**
  * Thread safe wrapper around Invocable.
  * Thread safety is achieved by synchronizing all methods.

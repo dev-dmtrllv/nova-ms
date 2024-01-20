@@ -27,7 +27,6 @@ import provider.Data;
 import provider.DataTool;
 import server.quest.Quest;
 import server.quest.QuestActionType;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -38,8 +37,6 @@ public class ExpAction extends AbstractQuestAction {
         super(QuestActionType.EXP, quest);
         processData(data);
     }
-
-
     @Override
     public void processData(Data data) {
         exp = DataTool.getInt(data);

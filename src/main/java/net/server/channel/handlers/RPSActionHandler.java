@@ -7,7 +7,6 @@ import net.AbstractPacketHandler;
 import net.packet.InPacket;
 import server.minigame.RockPaperScissor;
 import tools.PacketCreator;
-
 /**
  * @Author Arnah
  * @Website http://Vertisy.ca/

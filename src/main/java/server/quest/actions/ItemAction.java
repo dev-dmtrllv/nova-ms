@@ -44,7 +44,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import static java.util.concurrent.TimeUnit.MINUTES;
-
 /**
  * @author Tyler (Twdtwd)
  * @author Ronan
@@ -57,8 +56,6 @@ public class ItemAction extends AbstractQuestAction {
         super(QuestActionType.ITEM, quest);
         processData(data);
     }
-
-
     @Override
     public void processData(Data data) {
         for (Data iEntry : data.getChildren()) {

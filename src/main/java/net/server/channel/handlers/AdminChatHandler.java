@@ -6,7 +6,6 @@ import net.packet.InPacket;
 import net.packet.Packet;
 import server.ChatLogger;
 import tools.PacketCreator;
-
 /**
  * @author kevintjuh93
  */

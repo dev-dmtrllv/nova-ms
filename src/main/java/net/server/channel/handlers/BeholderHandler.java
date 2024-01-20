@@ -28,7 +28,6 @@ import net.packet.InPacket;
 import server.maps.Summon;
 
 import java.util.Collection;
-
 /**
  * @author BubblesDev
  */

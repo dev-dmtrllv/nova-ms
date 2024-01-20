@@ -30,7 +30,6 @@ import org.slf4j.LoggerFactory;
 import server.maps.MapObject;
 
 import java.awt.*;
-
 /**
  * @author Matze
  * @author Ronan

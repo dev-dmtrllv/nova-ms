@@ -27,7 +27,6 @@ import server.TimerManager;
 import tools.PacketCreator;
 
 import java.util.List;
-
 /*
  * MapleTVEffect
  * @author MrXotic (XoticStory)

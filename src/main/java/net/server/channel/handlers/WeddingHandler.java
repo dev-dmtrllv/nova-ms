@@ -5,8 +5,6 @@
  */
 
 package net.server.channel.handlers;
-
-
 import client.Character;
 import client.Client;
 import client.inventory.Inventory;
@@ -26,7 +24,6 @@ import tools.packets.WeddingPackets;
 
 import java.util.Collections;
 import java.util.List;
-
 /**
  * @author Drago (Dragohe4rt)
  */

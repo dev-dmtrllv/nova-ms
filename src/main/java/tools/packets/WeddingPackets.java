@@ -20,7 +20,6 @@ import tools.StringUtil;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * CField_Wedding, CField_WeddingPhoto, CWeddingMan, OnMarriageResult, and all Wedding/Marriage enum/structs.
  *

@@ -19,7 +19,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package client;
-
 /**
  * @author anybody can do this
  */

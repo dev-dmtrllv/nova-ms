@@ -42,7 +42,6 @@ import java.util.Map.Entry;
 
 import static java.util.concurrent.TimeUnit.HOURS;
 import static java.util.concurrent.TimeUnit.SECONDS;
-
 /**
  * @author Matze
  * @author Ronan - support for medal quests

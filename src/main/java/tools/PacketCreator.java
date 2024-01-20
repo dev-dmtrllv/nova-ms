@@ -76,7 +76,6 @@ import java.util.List;
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
-
 /**
  * @author Frz
  */
@@ -1477,8 +1476,6 @@ public class PacketCreator {
         p.writeByte(life.getStance());
         p.writeShort(0); //Origin FH //life.getStartFh()
         p.writeShort(life.getFh());
-
-
         /**
          * -4: Fake -3: Appear after linked mob is dead -2: Fade in 1: Smoke 3:
          * King Slime spawn 4: Summoning rock thing, used for 3rd job? 6:
@@ -7365,8 +7362,6 @@ public class PacketCreator {
         p.writeInt(nIncExp);
         return p;
     }
-
-
     private static Packet Tournament__Tournament(byte nState, byte nSubState) {
         final OutPacket p = OutPacket.create(SendOpcode.TOURNAMENT);
         p.writeByte(nState);

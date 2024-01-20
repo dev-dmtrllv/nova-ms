@@ -31,7 +31,6 @@ import server.ItemInformationProvider;
 import server.life.LifeFactory;
 import tools.PacketCreator;
 import tools.Randomizer;
-
 /**
  * @author AngelSL
  */

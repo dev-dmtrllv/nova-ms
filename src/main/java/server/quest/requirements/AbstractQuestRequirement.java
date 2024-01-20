@@ -24,7 +24,6 @@ package server.quest.requirements;
 import client.Character;
 import provider.Data;
 import server.quest.QuestRequirementType;
-
 /**
  * Base class for a Quest Requirement. Quest system uses it for all requirements.
  *

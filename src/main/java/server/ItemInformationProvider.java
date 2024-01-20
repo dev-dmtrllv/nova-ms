@@ -48,7 +48,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 import java.util.Map.Entry;
-
 /**
  * @author Matze
  */
@@ -133,8 +132,6 @@ public class ItemInformationProvider {
         isQuestItemCache.put(0, false);
         isPartyQuestItemCache.put(0, false);
     }
-
-
     public List<Pair<Integer, String>> getAllItems() {
         if (!itemNameCache.isEmpty()) {
             return itemNameCache;
@@ -315,8 +312,6 @@ public class ItemInformationProvider {
                 }
             }
         }
-
-
         return list;
     }
 
@@ -1809,8 +1804,6 @@ public class ItemInformationProvider {
             equip.wear(true);
             return true;
         }
-
-
         boolean highfivestamp = false;
         /* Removed check above for message ><
          try {

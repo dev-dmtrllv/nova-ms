@@ -46,7 +46,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import static java.util.concurrent.TimeUnit.DAYS;
-
 /**
  * @author RonanLana - synchronization of Fredrick modules and operation results
  */

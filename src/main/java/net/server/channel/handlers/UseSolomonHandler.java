@@ -31,7 +31,6 @@ import net.AbstractPacketHandler;
 import net.packet.InPacket;
 import server.ItemInformationProvider;
 import tools.PacketCreator;
-
 /**
  * @author XoticStory
  * <p>

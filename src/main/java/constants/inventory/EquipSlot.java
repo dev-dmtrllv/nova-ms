@@ -1,5 +1,4 @@
 package constants.inventory;
-
 /**
  * @author The Spookster (The Real Spookster)
  */

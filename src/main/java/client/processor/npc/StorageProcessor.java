@@ -38,7 +38,6 @@ import org.slf4j.LoggerFactory;
 import server.ItemInformationProvider;
 import server.Storage;
 import tools.PacketCreator;
-
 /**
  * @author Matze
  * @author Ronan - inventory concurrency protection on storing items

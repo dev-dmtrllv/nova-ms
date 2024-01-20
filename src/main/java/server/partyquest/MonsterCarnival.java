@@ -16,7 +16,6 @@ import java.util.concurrent.ScheduledFuture;
 
 import static java.util.concurrent.TimeUnit.MINUTES;
 import static java.util.concurrent.TimeUnit.SECONDS;
-
 /**
  * @author Drago (Dragohe4rt)
  */

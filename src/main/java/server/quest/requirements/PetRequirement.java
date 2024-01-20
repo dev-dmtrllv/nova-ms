@@ -30,28 +30,21 @@ import server.quest.QuestRequirementType;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * @author Tyler (Twdtwd)
  */
 public class PetRequirement extends AbstractQuestRequirement {
     List<Integer> petIDs = new ArrayList<>();
-
-
     public PetRequirement(Quest quest, Data data) {
         super(QuestRequirementType.PET);
         processData(data);
     }
-
-
     @Override
     public void processData(Data data) {
         for (Data petData : data.getChildren()) {
             petIDs.add(DataTool.getInt(petData.getChildByPath("id")));
         }
     }
-
-
     @Override
     public boolean check(Character chr, Integer npcid) {
         for (Pet pet : chr.getPets()) {

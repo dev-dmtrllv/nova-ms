@@ -9,7 +9,6 @@ import java.nio.file.Path;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.*;
-
 /**
  * @author RonanLana
  * <p>
@@ -368,4 +367,3 @@ public class QuestlineFetcher {
 
     }
 }
-

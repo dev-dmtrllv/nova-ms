@@ -59,7 +59,6 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import static java.util.concurrent.TimeUnit.MINUTES;
-
 /**
  * @author Matze
  * @author Ronan

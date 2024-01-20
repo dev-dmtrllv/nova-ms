@@ -32,7 +32,6 @@ import server.quest.QuestRequirementType;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -58,8 +57,6 @@ public class MobRequirement extends AbstractQuestRequirement {
             mobs.put(mobID, countReq);
         }
     }
-
-
     @Override
     public boolean check(Character chr, Integer npcid) {
         QuestStatus status = chr.getQuest(Quest.getInstance(questID));

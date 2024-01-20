@@ -4,7 +4,6 @@ import net.server.PlayerStorage;
 import net.server.Server;
 import net.server.channel.Channel;
 import server.maps.MapManager;
-
 /**
  * @author Resinate
  */

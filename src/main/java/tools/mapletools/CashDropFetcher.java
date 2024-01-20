@@ -12,7 +12,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
-
 /**
  * @author RonanLana
  * <p>
@@ -91,8 +90,6 @@ public class CashDropFetcher {
             status += 1;
         }
     }
-
-
     private static void inspectEquipWzEntry() {
         String line = null;
 

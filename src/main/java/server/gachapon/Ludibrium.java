@@ -1,7 +1,6 @@
 package server.gachapon;
 
 import constants.id.ItemId;
-
 /**
  * @author Ronan - parsed MapleSEA loots
  * <p>

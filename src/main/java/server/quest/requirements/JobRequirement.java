@@ -30,7 +30,6 @@ import server.quest.QuestRequirementType;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -51,8 +50,6 @@ public class JobRequirement extends AbstractQuestRequirement {
             jobs.add(DataTool.getInt(jobEntry));
         }
     }
-
-
     @Override
     public boolean check(Character chr, Integer npcid) {
         for (Integer job : jobs) {

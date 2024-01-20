@@ -27,7 +27,6 @@ import provider.DataTool;
 import server.ItemInformationProvider;
 import server.quest.Quest;
 import server.quest.QuestActionType;
-
 /**
  * @author Tyler (Twdtwd)
  */

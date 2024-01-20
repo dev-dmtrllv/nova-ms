@@ -10,7 +10,6 @@ import java.sql.SQLException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 /**
  * @author RonanLana
  * <p>
@@ -321,4 +320,3 @@ public class GachaponItemIdRetriever {
         }
     }
 }
-

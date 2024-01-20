@@ -30,7 +30,6 @@ import server.quest.QuestActionType;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -43,8 +42,6 @@ public class QuestAction extends AbstractQuestAction {
         questID = quest.getId();
         processData(data);
     }
-
-
     @Override
     public void processData(Data data) {
         for (Data qEntry : data) {

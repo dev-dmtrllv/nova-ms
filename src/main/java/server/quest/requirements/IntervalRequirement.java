@@ -30,7 +30,6 @@ import server.quest.QuestRequirementType;
 
 import static java.util.concurrent.TimeUnit.HOURS;
 import static java.util.concurrent.TimeUnit.MINUTES;
-
 /**
  * @author Tyler (Twdtwd)
  */

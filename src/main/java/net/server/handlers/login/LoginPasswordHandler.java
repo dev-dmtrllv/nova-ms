@@ -69,8 +69,6 @@ public final class LoginPasswordHandler implements PacketHandler {
         byte[] hwidNibbles = p.readBytes(4);
         Hwid hwid = new Hwid(HexTool.toCompactHexString(hwidNibbles));
         int loginok = c.login(login, pwd, hwid);
-
-
         if (YamlConfig.config.server.AUTOMATIC_REGISTER && loginok == 5) {
             try (Connection con = DatabaseConnection.getConnection();
                  PreparedStatement ps = con.prepareStatement("INSERT INTO accounts (name, password, birthday, tempban) VALUES (?, ?, ?, ?);", Statement.RETURN_GENERATED_KEYS)) { //Jayd: Added birthday, tempban

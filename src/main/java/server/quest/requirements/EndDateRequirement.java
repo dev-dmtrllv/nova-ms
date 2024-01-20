@@ -28,14 +28,11 @@ import server.quest.Quest;
 import server.quest.QuestRequirementType;
 
 import java.util.Calendar;
-
 /**
  * @author Tyler (Twdtwd)
  */
 public class EndDateRequirement extends AbstractQuestRequirement {
     private String timeStr;
-
-
     public EndDateRequirement(Quest quest, Data data) {
         super(QuestRequirementType.END_DATE);
         processData(data);
@@ -48,8 +45,6 @@ public class EndDateRequirement extends AbstractQuestRequirement {
     public void processData(Data data) {
         timeStr = DataTool.getString(data);
     }
-
-
     @Override
     public boolean check(Character chr, Integer npcid) {
         Calendar cal = Calendar.getInstance();

@@ -35,7 +35,6 @@ import java.util.Set;
 
 import static java.util.concurrent.TimeUnit.MINUTES;
 import static java.util.concurrent.TimeUnit.SECONDS;
-
 /**
  * @author kevintjuh93
  */

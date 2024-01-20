@@ -33,14 +33,11 @@ import server.quest.QuestRequirementType;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * @author Tyler (Twdtwd)
  */
 public class ItemRequirement extends AbstractQuestRequirement {
     Map<Integer, Integer> items = new HashMap<>();
-
-
     public ItemRequirement(Quest quest, Data data) {
         super(QuestRequirementType.ITEM);
         processData(data);
@@ -55,8 +52,6 @@ public class ItemRequirement extends AbstractQuestRequirement {
             items.put(itemId, count);
         }
     }
-
-
     @Override
     public boolean check(Character chr, Integer npcid) {
         ItemInformationProvider ii = ItemInformationProvider.getInstance();

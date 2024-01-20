@@ -11,7 +11,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Duration;
 import java.time.Instant;
-
 /**
  * @author RonanLana
  * <p>
@@ -58,8 +57,6 @@ public class DojoUpdate {
             } catch (Exception ex) {
             }
         }
-
-
         d = new String(dest);
         return (d.trim());
     }

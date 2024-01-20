@@ -1,5 +1,4 @@
 package client.inventory;
-
 /**
  * @author kevin
  */

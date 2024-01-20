@@ -308,8 +308,6 @@ public class Server {
             return null;
         }
     }
-
-
     private void dumpData() {
         wldRLock.lock();
         try {
@@ -1521,8 +1519,6 @@ public class Server {
 
                 playerEquips.add(ae.getLeft());
             }
-
-
             try (Connection con = DatabaseConnection.getConnection();
                  PreparedStatement ps = con.prepareStatement("SELECT * FROM characters WHERE accountid = ? ORDER BY world, id")) {
                 ps.setInt(1, accId);

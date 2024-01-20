@@ -3,7 +3,6 @@ package client.keybind;
 import net.packet.OutPacket;
 
 import java.util.Arrays;
-
 /**
  * @author Shavit
  */

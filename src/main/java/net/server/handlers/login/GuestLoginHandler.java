@@ -25,7 +25,6 @@ import client.Client;
 import net.AbstractPacketHandler;
 import net.packet.InPacket;
 import tools.PacketCreator;
-
 /*
  * @author David
  */

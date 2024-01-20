@@ -29,7 +29,6 @@ import constants.inventory.ItemConstants;
 import net.AbstractPacketHandler;
 import net.packet.InPacket;
 import scripting.npc.NPCScriptManager;
-
 /**
  * @author Generic
  */

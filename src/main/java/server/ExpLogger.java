@@ -62,8 +62,6 @@ public class ExpLogger {
             }
         }
     };
-
-
     private static void startExpLogger() {
         schdExctr.scheduleWithFixedDelay(saveExpLoggerToDBRunnable, EXP_LOGGER_THREAD_SLEEP_DURATION_SECONDS, EXP_LOGGER_THREAD_SLEEP_DURATION_SECONDS, SECONDS);
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {

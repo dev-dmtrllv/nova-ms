@@ -14,7 +14,6 @@ import server.quest.Quest;
 import tools.PacketCreator;
 
 import java.util.Map;
-
 /**
  * @author Xari
  * @author Ronan - added concurrency protection and quest progress limit

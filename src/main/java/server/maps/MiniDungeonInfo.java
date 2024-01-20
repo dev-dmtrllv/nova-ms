@@ -22,7 +22,6 @@
 package server.maps;
 
 import constants.id.MapId;
-
 /**
  * @author Alan (SharpAceX)
  */

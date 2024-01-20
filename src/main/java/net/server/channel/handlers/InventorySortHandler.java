@@ -33,7 +33,6 @@ import tools.PacketCreator;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * @author BubblesDev
  * @author Ronan
@@ -199,8 +198,6 @@ class PairedQuicksort {
             default:
                 PartitionByItemId(Esq, Dir, A);
         }
-
-
         if (Esq < j) {
             MapleQuicksort(Esq, j, A, sort);
         }

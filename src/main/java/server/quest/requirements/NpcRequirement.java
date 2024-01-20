@@ -26,7 +26,6 @@ import provider.Data;
 import provider.DataTool;
 import server.quest.Quest;
 import server.quest.QuestRequirementType;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -42,8 +41,6 @@ public class NpcRequirement extends AbstractQuestRequirement {
     public void processData(Data data) {
         reqNPC = DataTool.getInt(data);
     }
-
-
     @Override
     public boolean check(Character chr, Integer npcid) {
         return npcid != null && npcid == reqNPC;

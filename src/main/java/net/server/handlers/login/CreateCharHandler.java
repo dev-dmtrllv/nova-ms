@@ -58,8 +58,6 @@ public final class CreateCharHandler extends AbstractPacketHandler {
     private static boolean isLegal(Integer toCompare) {
         return IDs.contains(toCompare);
     }
-
-
     @Override
     public final void handlePacket(InPacket p, Client c) {
         String name = p.readString();

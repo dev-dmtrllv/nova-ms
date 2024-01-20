@@ -1,5 +1,4 @@
 package tools;
-
 /**
  * @author Shavit
  */

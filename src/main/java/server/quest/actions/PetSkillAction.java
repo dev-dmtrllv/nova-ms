@@ -28,7 +28,6 @@ import provider.Data;
 import provider.DataTool;
 import server.quest.Quest;
 import server.quest.QuestActionType;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -40,8 +39,6 @@ public class PetSkillAction extends AbstractQuestAction {
         questID = quest.getId();
         processData(data);
     }
-
-
     @Override
     public void processData(Data data) {
         flag = DataTool.getInt("petskill", data);

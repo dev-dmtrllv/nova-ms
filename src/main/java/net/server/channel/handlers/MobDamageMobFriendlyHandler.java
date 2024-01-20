@@ -30,7 +30,6 @@ import server.life.Monster;
 import server.maps.MapleMap;
 import tools.PacketCreator;
 import tools.Randomizer;
-
 /**
  * @author Xotic (XoticStory) & BubblesDev
  */

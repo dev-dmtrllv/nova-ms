@@ -1,24 +1,3 @@
-/*
-    This file is part of the OdinMS Maple Story Server
-    Copyright (C) 2008 Patrick Huy <patrick.huy@frz.cc>
-               Matthias Butz <matze@odinms.de>
-               Jan Christian Meyer <vimes@odinms.de>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as
-    published by the Free Software Foundation version 3 as published by
-    the Free Software Foundation. You may not use, modify or distribute
-    this program under any other version of the GNU Affero General Public
-    License.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
-
-    You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
 package net.server.channel.handlers;
 
 import client.Character;
@@ -37,7 +16,6 @@ import tools.exceptions.EmptyMovementException;
 import java.awt.*;
 import java.util.LinkedList;
 import java.util.List;
-
 /**
  * @author Danny (Leifde)
  * @author ExtremeDevilz
@@ -146,8 +124,6 @@ public final class MoveLifeHandler extends AbstractMovementPacketHandler {
         } else {
             c.sendPacket(PacketCreator.moveMonsterResponse(objectid, moveid, mobMp, aggro));
         }
-
-
         try {
             int movementDataStart = p.getPosition();
             updatePosition(p, monster, -2);  // Thanks Doodle & ZERO傑洛 for noticing sponge-based bosses moving out of stage in case of no-offset applied

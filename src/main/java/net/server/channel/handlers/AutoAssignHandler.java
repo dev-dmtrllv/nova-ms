@@ -25,7 +25,6 @@ import client.Client;
 import client.processor.stat.AssignAPProcessor;
 import net.AbstractPacketHandler;
 import net.packet.InPacket;
-
 /**
  * @author Generic, Ronan
  */

@@ -27,7 +27,6 @@ import net.AbstractPacketHandler;
 import net.packet.InPacket;
 import server.events.gm.Snowball;
 import server.maps.MapleMap;
-
 /**
  * @author kevintjuh93
  */

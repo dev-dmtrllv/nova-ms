@@ -1,5 +1,4 @@
 package server.gachapon;
-
 /**
  * @author Alan (SharpAceX) - gachapon source classes stub & pirate items
  * @author Ronan - parsed MapleSEA loots

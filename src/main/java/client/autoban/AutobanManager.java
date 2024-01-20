@@ -13,7 +13,6 @@ import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * @author kevintjuh93
  */
@@ -29,8 +28,6 @@ public class AutobanManager {
     private final long[] spam = new long[20];
     private final int[] timestamp = new int[20];
     private final byte[] timestampcounter = new byte[20];
-
-
     public AutobanManager(Character chr) {
         this.chr = chr;
     }

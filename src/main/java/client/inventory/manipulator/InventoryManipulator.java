@@ -40,7 +40,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-
 /**
  * @author Matze
  * @author Ronan - improved check space feature and removed redundant object calls

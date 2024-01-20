@@ -11,7 +11,6 @@ import java.sql.SQLException;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
-
 /**
  * @author RonanLana
  * <p>
@@ -187,4 +186,3 @@ public class IdRetriever {
         System.out.println("Get elapsed time in seconds: " + durationBetween.toSeconds());
     }
 }
-

@@ -9,7 +9,6 @@ import client.Character;
 import client.SkillFactory;
 
 import static java.util.concurrent.TimeUnit.DAYS;
-
 /**
  * @author kevintjuh93
  */

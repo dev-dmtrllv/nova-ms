@@ -5,7 +5,6 @@
  */
 
 package constants.string;
-
 /*
  * Thanks to GabrielSin (EllinMS) - gabrielsin@playellin.net
  * Ellin

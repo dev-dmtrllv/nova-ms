@@ -25,7 +25,6 @@ import client.Client;
 import client.processor.npc.StorageProcessor;
 import net.AbstractPacketHandler;
 import net.packet.InPacket;
-
 /**
  * @author Matze
  */

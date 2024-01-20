@@ -14,7 +14,6 @@ import server.quest.Quest;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.*;
-
 /*
  * @author kevintjuh93
  * @author Ronan

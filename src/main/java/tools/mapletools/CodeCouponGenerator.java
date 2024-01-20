@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Set;
 
 import static java.util.concurrent.TimeUnit.HOURS;
-
 /**
  * @author RonanLana
  * <p>

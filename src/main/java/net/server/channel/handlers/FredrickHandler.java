@@ -26,7 +26,6 @@ import client.Client;
 import client.processor.npc.FredrickProcessor;
 import net.AbstractPacketHandler;
 import net.packet.InPacket;
-
 /**
  * @author kevintjuh93
  */

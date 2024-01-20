@@ -28,7 +28,6 @@ import provider.DataTool;
 import server.quest.Quest;
 import server.quest.QuestActionType;
 import tools.PacketCreator;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -39,8 +38,6 @@ public class NextQuestAction extends AbstractQuestAction {
         super(QuestActionType.NEXTQUEST, quest);
         processData(data);
     }
-
-
     @Override
     public void processData(Data data) {
         nextQuest = DataTool.getInt(data);

@@ -27,7 +27,6 @@ import server.quest.QuestRequirementType;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * @author Tyler (Twdtwd)
  */
@@ -50,8 +49,6 @@ public class QuestRequirement extends AbstractQuestRequirement {
             quests.put(questID, stateReq);
         }
     }
-
-
     @Override
     public boolean check(Character chr, Integer npcid) {
         for (Integer questID : quests.keySet()) {

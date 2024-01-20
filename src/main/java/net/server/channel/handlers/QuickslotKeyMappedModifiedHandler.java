@@ -4,7 +4,6 @@ import client.Client;
 import client.keybind.QuickslotBinding;
 import net.AbstractPacketHandler;
 import net.packet.InPacket;
-
 /**
  * @author Shavit
  */

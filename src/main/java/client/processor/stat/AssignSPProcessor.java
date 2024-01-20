@@ -33,7 +33,6 @@ import constants.skills.Aran;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import tools.PacketCreator;
-
 /**
  * @author RonanLana - synchronization of SP transaction modules
  */

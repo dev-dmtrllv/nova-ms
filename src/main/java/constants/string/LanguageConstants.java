@@ -1,7 +1,6 @@
 package constants.string;
 
 import client.Character;
-
 /**
  * @author Drago (Dragohe4rt)
  */
@@ -85,8 +84,6 @@ public class LanguageConstants {
         LanguageConstants.CPQFindError[lang] = "We could not find a group in this room.\r\nProbably the group was scrapped inside the room!";
         LanguageConstants.CPQEntryLobby[lang] = "You will now receive challenges from other groups. If you do not accept a challenge within 3 minutes, you will be taken out.";
         LanguageConstants.CPQEntry[lang] = "You can select \"Summon Monsters\", \"Ability\", or \"Protector\" as your tactic during the Monster Carnival. Use Tab and F1 ~ F12 for quick access!";
-
-
     }
 
     public static String getMessage(Character chr, String[] message) {

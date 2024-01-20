@@ -28,7 +28,6 @@ import net.packet.InPacket;
 import net.server.world.Party;
 import net.server.world.World;
 import tools.PacketCreator;
-
 /**
  * @author XoticStory
  * @author BubblesDev
